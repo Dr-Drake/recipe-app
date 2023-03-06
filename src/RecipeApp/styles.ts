@@ -47,6 +47,14 @@ export const InputRow = styled.div`
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     padding: 2% 0;
+
+    @media ${device.bigMobile}{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ${device.mobile}{
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const CustomLabel = styled(Label)`
@@ -63,6 +71,48 @@ export const FormButton = styled(Button)`
         background-color: #BD3B5F;
         color: white;
         border: none;
+    }
+
+    &:disabled{
+        background-color: #BD3B5F;
+        color: white;
+        border: none;
+    }
+`;
+
+
+export const RecipeResultContainer = styled.div`
+    // background-color: white;
+    padding: 5%;
+`;
+
+export const NotFoundContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > p{
+        color: white;
+        font-size: 26px;
+        margin-top: 15px;
+    }
+`;
+
+export const ResultRow = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    @media ${device.smallDesktop}{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media ${device.bigMobile}{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ${device.mobile}{
+        grid-template-columns: 1fr;
     }
 `;
 

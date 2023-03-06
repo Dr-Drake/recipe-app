@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import RecipeApp from './RecipeApp';
+import { ToastProvider } from '@zendeskgarden/react-notifications';
+import { ThemeProvider } from '@zendeskgarden/react-theming';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <RecipeApp />
+    <ThemeProvider>
+      <ToastProvider>
+        <RecipeApp />
+      </ToastProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
