@@ -9,7 +9,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
 })=>{
 
     return(
-        <a href={sourceUrl} target="_blank">
+        <a href={sourceUrl} target="_blank" rel="noreferrer">
             <Card>
                 <img src={image} alt={title} className="card-image" />
                 <div className="overlay">
