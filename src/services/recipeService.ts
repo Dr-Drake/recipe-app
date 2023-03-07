@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from "axios";
+import axios, { AxiosError, AxiosResponse } from "axios";
 import { RecipeFormState } from "../RecipeApp/schema";
 import { GeneralResponse } from "../types/GeneralResponse";
 import { RecipeResponse } from "../types/RecipeResponse";

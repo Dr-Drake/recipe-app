@@ -2,7 +2,7 @@ import { Formik } from 'formik';
 import React from 'react';
 import { RecipeFormSchema, RecipeFormState } from './schema';
 import { CustomLabel, FormButton, FormContainer, HeaderSection, InputRow, NotFoundContainer, QueryInput, RecipeResultContainer, ResultRow } from './styles';
-import { ThemeProvider } from '@zendeskgarden/react-theming';
+// import { ThemeProvider } from '@zendeskgarden/react-theming';
 import { Field, Message } from '@zendeskgarden/react-forms';
 import { Dropdown, Menu, Item, Select, Field as DropdownField } from '@zendeskgarden/react-dropdowns';
 import { cuisineOptions, dietOptions, IItem } from './data';
